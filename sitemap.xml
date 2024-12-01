@@ -4,7 +4,7 @@
 
     <sitemap>
         <loc>https://camellia065.github.io/post-sitemap.xml</loc>
-        <lastmod>2024-12-01T06:47:52.556Z</lastmod>
+        <lastmod>2024-12-01T10:46:39.819Z</lastmod>
     </sitemap>
 
     <sitemap>
@@ -13,8 +13,13 @@
     </sitemap>
 
     <sitemap>
+        <loc>https://camellia065.github.io/category-sitemap.xml</loc>
+        <lastmod>2024-12-01T10:46:39.819Z</lastmod>
+    </sitemap>
+
+    <sitemap>
         <loc>https://camellia065.github.io/tag-sitemap.xml</loc>
-        <lastmod>2024-12-01T06:47:52.556Z</lastmod>
+        <lastmod>2024-12-01T10:46:39.819Z</lastmod>
     </sitemap>
 
 </sitemapindex>
