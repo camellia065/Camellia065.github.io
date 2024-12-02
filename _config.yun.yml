@@ -1,0 +1,124 @@
+# ================================
+# 基础信息
+# ================================
+avatar:
+  url: /images/avatar.png # 确保头像路径正确
+  status:
+    enable: false # 如果不需要状态，可以禁用
+    emoji: 😊
+    message: "Online"
+favicon: /images/favicon.ico # 网站的 favicon 路径
+banner:
+  enable: true # 确保横幅启用
+  title: 欢迎来到我的博客 # 横幅标题
+  subtitle: 分享知识与想法 # 横幅副标题
+  background: /images/banner.jpg # 横幅背景图片的路径
+  go_down:
+    enable: true # 启用“向下滚动”按钮
+    icon: ri:arrow-down-line # 图标样式
+language: zh-CN
+
+# ================================
+# 菜单配置
+# ================================
+menu:
+  Home:
+    path: /
+    icon: ri:home-line
+  About:
+    path: /about/
+    icon: ri:information-line
+  Archive:
+    path: /archives/
+    icon: ri:archive-line
+
+# ================================
+# 页脚配置
+# ================================
+footer:
+  since: 2024
+  icon:
+    name: ion-icon:heart # 确保使用支持的图标名称
+    title: "Made with Love"
+    url: "https://example.com" # 如果不需要链接，可以省略
+  custom_text: Powered by Hexo & Yun
+
+# ================================
+# 社交链接
+# ================================ 
+# 侧边栏配置  
+# ================================  
+sidebar:
+  enable: true # 启用侧边栏
+  title: "Camellia's Blog" # 标题
+  description: "分享知识与生活" # 描述
+  avatar: /images/avatar.png # 头像路径
+  statistics: # 博客统计信息
+    posts: true # 显示文章数
+    pages: true # 显示页面数
+    tags: true # 显示标签数
+    categories: true # 显示分类数
+ 
+social:
+  enable: true
+  items:
+    - name: GitHub
+      link: https://github.com/camellia065
+      icon: ri-github-fill
+    - name: Twitter
+      link: https://twitter.com/yourusername
+      icon: ri-twitter-fill
+    - name: LinkedIn
+      link: https://linkedin.com/in/yourusername
+      icon: ri-linkedin-fill
+
+# ================================
+# SEO 配置
+# ================================
+seo:
+  keywords: blog, Hexo, Yun, programming # 网站关键词
+  description: A personal blog about programming and life. # 网站描述
+
+# ================================
+# 功能开关
+# ================================
+widgets: # 右侧工具栏的配置
+  recent_posts: true # 显示最近文章
+  categories: true # 显示分类
+  tags: true # 显示标签
+  toc: true # 显示文章目录
+  archives: true # 显示归档链接
+
+# ================================
+# 代码高亮
+# ================================
+highlight:
+  enable: true # 启用代码高亮
+  line_number: true # 显示行号
+  theme: one-dark # 高亮主题（示例：one-dark）
+
+# ================================
+# 评论系统
+# ================================
+comment:
+  enable: true # 启用评论
+  type: giscus # 评论类型 (支持 giscus, utterances, disqus)
+  repo: camellia065 # 如果使用 giscus，需指定仓库
+  mapping: pathname # 评论与文章的映射方式
+
+# ================================
+# 第三方服务
+# ================================
+analytics:
+  baidu: <your-baidu-analytics-id> # 百度统计
+  google: <your-google-analytics-id> # Google Analytics
+
+cdn:
+  enable: true # 启用 CDN 加速
+  provider: jsdelivr # CDN 提供商（如 jsdelivr）
+
+  custom_css:
+  - css/custom.css # 引入你的自定义 CSS 文件
+
+  remixicon_css:
+    - /remixicon/fonts/remixicon.css

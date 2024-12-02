@@ -1,0 +1,131 @@
+# Hexo 配置文件
+# 文档: https://hexo.io/docs/configuration.html
+# 源码: https://github.com/hexojs/hexo/
+
+# ================================
+# 网站信息
+# ================================
+title: Camellia's Blog # 网站标题
+subtitle: 分享知识与想法 # 网站副标题
+description: 关于编程、生活等的博客 # 网站描述
+keywords: 博客, 编程, 技术, 生活 # 网站关键词（用于 SEO 优化）
+author: Camellia # 作者名称
+language: zh-CN # 网站语言（如需要中文可改为 zh-CN）
+timezone: Asia/Shanghai # 时区
+
+# ================================
+# URL 配置
+# ================================
+url: https://camellia065.github.io # 网站地址（如果使用 GitHub Pages）
+permalink: :year/:month/:day/:title/ # 文章链接格式
+permalink_defaults: # 文章链接的默认值
+pretty_urls: 
+  trailing_index: false # 移除链接末尾的 index.html
+  trailing_html: false  # 移除链接末尾的 .html
+
+# ================================
+# 目录配置
+# ================================
+source_dir: source # 源文件目录（存放文章、页面等内容）
+public_dir: public # 静态文件生成目录（生成的静态文件）
+tag_dir: tags # 标签目录
+archive_dir: archives # 归档目录
+category_dir: categories # 分类目录
+code_dir: downloads/code # 下载代码存储目录
+i18n_dir: :lang # 国际化目录
+skip_render: # 配置需要跳过渲染的文件或目录
+
+# ================================
+# 写作配置
+# ================================
+new_post_name: :title.md # 新文章的默认文件名格式
+default_layout: post # 默认布局类型（文章）
+titlecase: false # 不自动将标题转换为标题格式
+external_link: 
+  enable: true # 外部链接在新标签页打开
+  field: site # 全站启用
+  exclude: '' # 排除特定链接
+filename_case: 0 # 文件名大小写设置（0: 不变，1: 转为小写）
+render_drafts: false # 不渲染草稿
+post_asset_folder: true # 启用文章资源文件夹（如图片）
+relative_link: false # 禁用相对链接
+future: true # 显示未来日期的文章
+syntax_highlighter: prismjs # 使用 Prism.js 作为代码高亮工具
+
+highlight: # 高亮配置（Hexo 默认的 Highlight.js）
+  line_number: true # 显示代码行号
+  auto_detect: false # 不自动检测代码语言
+  tab_replace: '' # 替换 Tab 缩进为空
+  wrap: true # 是否自动换行
+  hljs: false # 不启用 Highlight.js 样式
+
+prismjs: # Prism.js 配置
+  preprocess: true # 是否预处理代码块
+  line_number: true # 显示行号
+  tab_replace: '' # 替换 Tab 缩进为空
+
+# ================================
+# 首页设置
+# ================================
+index_generator:
+  path: '' # 博客首页的路径（默认根目录）
+  per_page: 10 # 每页显示文章数
+  order_by: -date # 按发布时间倒序排列文章
+
+# ================================
+# 分类和标签设置
+# ================================
+default_category: uncategorized # 默认分类
+category_map: # 分类映射（可选）
+tag_map: # 标签映射（可选）
+
+# ================================
+# 元信息
+# ================================
+meta_generator: false # 禁用 Hexo 的 meta generator 标签（优化 SEO）
+
+# ================================
+# 日期和时间格式
+# ================================
+date_format: YYYY-MM-DD # 日期格式
+time_format: HH:mm:ss # 时间格式
+updated_option: 'mtime' # 使用文件的最后修改时间作为 "更新时间"
+
+# ================================
+# 分页设置
+# ================================
+per_page: 10 # 每页显示文章数（设置为 0 可禁用分页）
+pagination_dir: page # 分页目录
+
+# ================================
+# 包含/排除文件
+# ================================
+include: # 配置需要包含的文件或目录
+exclude: # 配置需要排除的文件或目录
+ignore: # 配置需要忽略的路径
+
+# ================================
+# 主题配置
+# ================================
+theme: yun # 使用 Yun 主题
+
+# ================================
+# 菜单和社交链接（针对 Yun 主题）
+# ================================
+menu: # 网站菜单
+  Home: / # 首页
+  About: /about/ # 关于页面
+  Archive: /archives/ # 归档页面
+
+social: # 社交链接
+  github: https://github.com/camellia065 # GitHub 链接
+  email: camellia065@outlook.com # 邮箱地址
+
+# ================================
+# 部署配置
+# ================================
+deploy:
+  type: git # 部署方式为 Git
+  repo: https://github.com/camellia065/camellia065.github.io.git # 仓库地址
+  branch: main # 部署到 main 分支
+

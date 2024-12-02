@@ -1,0 +1,21 @@
+#version: '3.8'
+
+services:
+  hexo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CHANGE_APK_SOURCE: true
+        CHANGE_NPM_SOURCE: true
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./source:/blog/source
+      - ./themes:/blog/themes
+      - ./_config.yml:/blog/_config.yml
+      - ./_config.yun.yml:/blog/_config.yun.yml
+      - ./scaffolds:/blog/scaffolds
+      - ./public:/blog/public
+    environment:
+      - NODE_ENV=production
